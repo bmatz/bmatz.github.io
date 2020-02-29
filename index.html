@@ -8,10 +8,10 @@
 <body>
     Testsite
     <div id="main"></div>
-    <script type="javascript">
-        window.onload = () => {
+    <script>
+        window.onload = function () {
             console.log('loaded');
-            const main = document.getElementById('main');
+            var main = document.getElementById('main');
             console.log(main);
             main.innerHtml = '<span>wahoo</span>';
         };
